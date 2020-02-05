@@ -7,11 +7,19 @@
  * is called.
  */
 
-(function() {
+(function () {
 
-    //your code here
+    let newArray = []
+    for (let i = 0; i < artArray.length; i++) {
+        if (i % 2 === 0) {
 
-    writeAscii(artArray);
+        } else {
+            newArray.push(artArray[i - 1])
+        }
+    }
+
+    writeAscii(newArray);
+    console.log(artArray)
 
 })();
 
